@@ -27,7 +27,7 @@ public class Task9 {
         star.shine();
         Universe sun = new Sun();
         sun.doAnything();
-        Star sun1 = (Star) sun;
+        Sun sun1 = (Sun) sun;
         sun1.shine();
     }
 }
