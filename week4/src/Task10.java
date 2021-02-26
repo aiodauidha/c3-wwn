@@ -9,6 +9,11 @@ public class Task10 {
                         obj.notify();
                         System.out.println("线程A打印：" + 2 * i);
                         try {
+                            Thread.sleep(200);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        try {
                             obj.wait();
                         } catch (InterruptedException e) {
                             e.printStackTrace();
@@ -24,6 +29,11 @@ public class Task10 {
                     for (int i = 0; i < 5; i++) {
                         obj.notify();
                         System.out.println("线程B打印：" + (2 * i + 1));
+                        try {
+                            Thread.sleep(200);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                         try {
                             obj.wait();
                         } catch (InterruptedException e) {
