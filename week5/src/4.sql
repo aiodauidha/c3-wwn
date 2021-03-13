@@ -1,0 +1,3 @@
+USE test;
+
+ALTER TABLE ChooseBb ADD Bb4 VARCHAR(20) NOT NULL DEFAULT "系统测试值";
